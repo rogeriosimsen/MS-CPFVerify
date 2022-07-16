@@ -18,7 +18,7 @@ public class IndexController {
 	@Autowired
 	CPFVerifyService cpfVeriyService;
 	
-	@CrossOrigin("*")
+	@CrossOrigin
 	@PostMapping(value = "/verify", produces = "application/json")
 	public CPFStatus cpfVerify(@RequestBody CPF cpfParam) {
 		
